@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen font-sans">
+
+    <div class="calculator-grid bg-gray-800 p-6 rounded-2xl shadow-2xl">
+        <!-- Display Screen -->
+        <div class="output bg-gray-900 text-white p-4 rounded-lg text-right mb-4">
+            <div data-previous-operand class="previous-operand text-gray-400 text-xl h-8"></div>
+            <div data-current-operand class="current-operand text-5xl font-bold">0</div>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <button data-all-clear class="span-two bg-red-500 hover:bg-red-600">AC</button>
+        <button data-delete class="bg-gray-600 hover:bg-gray-700">DEL</button>
+        <button data-operation class="bg-indigo-500 hover:bg-indigo-600">÷</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation class="bg-indigo-500 hover:bg-indigo-600">*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation class="bg-indigo-500 hover:bg-indigo-600">+</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation class="bg-indigo-500 hover:bg-indigo-600">-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals class="span-two bg-green-500 hover:bg-green-600">=</button>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</body>
+</html>
